@@ -1,0 +1,14 @@
+a:
+INBOX
+COPYTO  0
+JUMP    c
+b:
+OUTBOX
+BUMPUP  0
+c:
+d:
+JUMPN   b
+OUTBOX  
+BUMPDN  0
+JUMPN   a
+JUMP    d
